@@ -1,28 +1,41 @@
-*{
+* {
     background-color: #1e1c2a !important;
+    
 }
-#nav-main{
+
+#nav-main {
     background-color: #1e1c2a;
     padding: 0 7%;
 }
-#nav-main a{
+
+#nav-main a {
     color: white;
     font-size: 1.3rem;
     margin-left: 30px;
 }
-#nav-main a:hover{
+
+#nav-main a:hover {
     color: orange;
+    transition: .4s;
 }
-#search-box ::placeholder,#search-text{
+#search-btn:hover{
+    color: red;
+}
+
+#search-box ::placeholder,
+#search-text {
     color: white;
 }
-#search-text{
+
+#search-text {
     box-shadow: -1px 1px 12px rgb(161, 159, 159);
 }
-#search-box{   
+
+#search-box {
     padding-top: 20px;
     padding-bottom: 2%;
 }
+
 .navbar-toggler-icon {
     display: inline-block;
     width: 1.5em;
@@ -34,29 +47,69 @@
     background-size: 100%;
     background-color: #e3dede;
 }
-@media only screen and (max-width:1024px){
-    #nav-main a{
+.navbar-toggler-icon{
+    background-color: white !important;
+}
+@media only screen and (max-width:1024px) {
+    #nav-main a {
         margin-left: 20px;
-    }   
-    #search-box{
+    }
+    
+    #search-box {
         margin-left: 29px;
         margin-top: 0px;
     }
+    
+    #home-img {
+        margin-top: 80px;
+        margin-left: 15px;
+    }
 }
+@media only screen and (max-width:768px){
+    body{
+        background-color: red;
+    }
+    #home-img {
+        margin-top: 120px;
+        margin-left: 57px;
+    }
+    #home-text h1{
+        font-size: 3rem !important;
+    }
+}
+
 /* NAVBAR DONE */
-#home-text{
+/* HOME */
+#home-text {
     margin-top: 200px;
 }
-#home-text h1{
+
+#home-text h1 {
     color: rgb(242, 164, 20);
     font-size: 70px;
 }
-#home-text p{
+
+#home-text p {
     color: white;
     font-size: 25px;
 }
-#home-btn{
+
+#home-button{
     border-radius: 10px;
     padding: 1%;
-    background-color: rgb(242, 164, 20)!important;
+    background-color: rgb(242, 164, 20) !important;
+}
+/* About US */
+#about-text{
+    margin-top: 100px;
+}
+@media only screen and (max-width:1024px){
+    #about-text{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:770px){
+    #about-text h2{
+        font-size: 1.5rem;
+    }
 }

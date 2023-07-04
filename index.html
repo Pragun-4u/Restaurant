@@ -5,17 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>YumYum</title>
+    <title>Spice and Slice</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg" id="nav-main">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.jpg" alt="YumYum" width="100px" class="img-fluid">
+                <img src="images/spiceandslicelogo.png" alt="Spice and Slice" width="100px" class="img-fluid"> 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -64,47 +65,122 @@
             </div>
         </div>
     </div>
-    <hr>
-    <div class="container-fluid ">
-        <div class="row text-center justify-content-center mt-100">
+    
+    <div class="container-fluid pt-5">
+        <div class="row text-center justify-content-center" >
             <div class="col-md-5 d-none d-md-block">
                 <img src="images/about.png" alt="About" class="img-fluid">
             </div>
             <div class="col-md-4 text-white" id="about-text">
                 <h6 style="color:orange">About Us</h6>
                 <h2>We speak the good <br> food language</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo corrupti quidem voluptas,
-                    perferendis totam voluptatum quas commodi nobis molestiae placeat, illum, sunt maiores doloremque
-                    pariatur temporibus provident nesciunt magnam tenetur.</p>
+                <p>Nestled in the heart of <span style="color: orange;">Mumbai</span>, our restaurant is a haven for spice enthusiasts and food lovers alike. With a passion for flavor and a commitment to quality, we meticulously craft each dish, infusing it with a harmonious blend of spices and expertly sliced ingredients. From bold and fiery flavors to delicate and aromatic creations, our menu showcases the artistry of spices and the precision of slicing techniques. Whether you crave a sizzling curry or a perfectly seared cut, our culinary creations will transport you to a world of exquisite tastes. Join us at Spice and Slice and experience the captivating fusion of flavors that will leave you craving more.</p>
             </div>
         </div>
     </div>
-    <hr>
-    <div class="container-fluid text-center justify-content-center  text-white">
-        <div class="row ">
+    
+    <div class="container-fluid text-center justify-content-center  text-white pt-5" id="Menu">
+        <div class="row text-center justify-content-center  ">
             <div class="col-12">
                 <h6 style="color:orange">Food Menu</h6>
                 <h1>Fresh taste and Great Price</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-3">
-                <img src="images/food1.png" class="img-fluid" alt="">
-                <h5>Chicken Burger</h5>
-                <p></p>
+                <img src="images/food1.png" class="img-fluid" alt="Veggie Burger" style="cursor: pointer;">
+                <h5>Veggie Burger</h5>
+                <p><i class="bi bi-currency-rupee"></i> 150 </p>
+                <button type="button" class="add2cart">
+                    <i class="bi bi-cart2"></i> Add to cart
+                </button>
             </div>
             <div class="col-md-3 ">
-                <img src="images/food2.png" class="img-fluid" alt="">
+                <img src="images/food2.png" class="img-fluid" alt="Special Chicken Burger" style="cursor: pointer;">
+                <h5>Special Chicken Burger</h5>
+                <p><i class="bi bi-currency-rupee"></i>250</p>
+                <button type="button" class="add2cart" id="cart2">
+                    <i class="bi bi-cart2"></i> Add to cart
+                </button>
             </div>
             <div class="col-md-3">
-                <img src="images/food3.png" class="img-fluid" alt="">
+                <img src="images/food3.png" class="img-fluid" alt="Chicken Fry Pack" style="cursor: pointer;">
+                <h5 class="pt-2">Chicken Fry Pack</h5>
+                <p><i class="bi bi-currency-rupee"></i>450</p>
+                <button type="button" class="add2cart" id="cart3">
+                    <i class="bi bi-cart2"></i> Add to cart
+                </button>
             </div>
         </div>
     </div>
 
-
-
-
+    <div class="container-fluid justify-content-center text-center text-white pt-5">
+        <div class="row ">
+            <div class="col-12">
+                <h6 style="color:orange" >Services</h6>
+                <h2>We Provide Best Quality Food</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center text-white">
+            <div class="col-md-3 pt-5">
+                <img src="images/s1.png" class="img-fluid" style="width: 100px;" alt="Order">
+                <h5>Order</h5>
+                <p>Browse our extensive menu online and place your order with just a few clicks, ensuring a seamless and convenient ordering experience.</p>
+            </div>
+            <div class="col-md-3 pt-5">
+                <img src="images/s2.png" class="img-fluid" style="width: 100px;" alt="Shipping">
+                <h5>Shipping</h5>
+                <p>No matter the distance, our meticulous shipping process guarantees that your order arrives in perfect condition, allowing you to enjoy our restaurant-quality meals from the comfort of your own home.</p>
+            </div>
+            <div class="col-md-3 pt-5">
+                <img src="images/s3.png" class="img-fluid" style="width: 100px;" alt="Delivery">
+                <h5>Delivery</h5>
+                <p>With our reliable delivery service, you can indulge in our exquisite cuisine without the hassle of leaving your home, allowing you to savor the flavors at your own convenience.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid pt-5" style="border-top: 1px solid white;">
+        <div class="row text-center justify-content-center text-white">
+        <div class="col-md-3">
+            <h1>Spice & <span style="text-decoration: line-through; color: orange;">Slice</span> </h1>
+            <h6>Delight in every <span style="color: orange;">bite</span>.</h6>
+            <p>At Spice and Slice, we are passionate about creating a vibrant culinary experience that celebrates the fusion of spices and the art of slicing. With our diverse menu inspired by global flavors, we strive to tantalize your taste buds and take you on a flavorful journey. From aromatic spices to perfectly sliced ingredients, every dish is crafted with precision and creativity to bring you an unforgettable dining experience. Whether you're seeking a spicy kick or a delicate slice, we invite you to savor the harmony of flavors and textures that make Spice and Slice a true culinary destination.</p>
+        </div>
+        <div class="col-md-3 pt-4" id="links">
+            <h2>Related Links</h2>
+            <a href="#">Our Chefs</a> <br>
+            <a href="#">Certification</a> <br>
+            <a href="">Critics Reviews</a> <br>
+            <a href="">Career</a> <br>
+            <a href="">Our Branches</a>
+        </div>
+        <div class="col-md-3 pt-4 pb-3" id="social-links">
+            <h1>Opening Hours</h1>
+            <p class="pt-2"><span style="color:red">Monday: Closed </span><br>
+                Tuesday: 11:00 AM - 9:00 PM <br>
+                Wednesday: 11:00 AM - 9:00 PM <br>
+                Thursday: 11:00 AM - 9:00 PM <br>
+                Friday: 11:00 AM - 10:00 PM <br>
+                Saturday: 10:00 AM - 10:00 PM <br>
+                Sunday: 10:00 AM - 9:00 PM</p>
+                <hr>
+            <h4>Follow us on</h4>
+            <i class="bi bi-facebook px-2"></i>
+            <i class="bi bi-instagram px-2"></i>
+            <i class="bi bi-twitter px-2"></i>
+            <i class="bi bi-youtube px-2"></i>
+        </div>
+    </div>
+    </div>
+    
+    <div class="container-fluid pt-2 pb-2" style="border-top: 1px solid white;">
+        <div class="row justify-content-center text-center text-white">
+            <div class="col-12">
+                All rights reserved. &copy;2023 Spice and <span style="text-decoration: line-through; color: orange;">Slice</span> 
+            </div>
+        </div>
+    </div>
 
 
     <!-- script -->
